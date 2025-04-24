@@ -1,4 +1,4 @@
-let contador = 10;
+let contador = 0;
 
 function atualizarContador() {
   document.getElementById('contador').textContent = contador;
@@ -10,13 +10,11 @@ function aumentar() {
 }
 
 function diminuir() {
-    if (contador>10){
   contador--;
   atualizarContador();
     }
-}
 
 function resetar() {
-  contador = 10;
+  contador = 0;
   atualizarContador();
 }
